@@ -33,7 +33,7 @@ namespace GithubActionsLab
 
         //Subtract
         [Test]
-        public void Sub_Valid()
+        public void Sub_Valid_AlexGilson()
         {
             Assert.AreEqual(-1, Program.Subtract("1", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -41,7 +41,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid()
+        public void Sub_Invalid_AlexGilson()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -49,7 +49,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null()
+        public void Sub_Null_AlexGilson()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -58,7 +58,7 @@ namespace GithubActionsLab
 
         //Multiply
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Valid_AlexGilson()
         {
             Assert.AreEqual(2, Program.Multiply("1", "2"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -66,7 +66,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_Invalid_AlexGilson()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -74,7 +74,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_Null_AlexGilson()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -83,7 +83,7 @@ namespace GithubActionsLab
 
         //Divide
         [Test]
-        public void Divide_Valid()
+        public void Divide_Valid_AlexGilson()
         {
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(3, Program.Divide("3", "1"));
@@ -91,7 +91,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_Invalid_AlexGilson()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -99,7 +99,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_Null_AlexGilson()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -108,7 +108,7 @@ namespace GithubActionsLab
 
         //power
         [Test]
-        public void Power_Valid()
+        public void Power_Valid_AlexGilson()
         {
             Assert.AreEqual(4, Program.Power("2", "2"));
             Assert.AreEqual(125, Program.Power("5", "3"));
@@ -116,7 +116,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_Invalid_AlexGilson()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -124,7 +124,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_Null_AlexGilson()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
